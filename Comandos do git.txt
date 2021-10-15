@@ -1,0 +1,4 @@
+git status (mostra o status dos arquivos do main)
+git add . (Adiciona todos os arquivos novos)
+git commit -m "" (Faz um commit nos arquivos adicionados)
+git push origin main (Salva o commit na nuvem, retirando do main original)
