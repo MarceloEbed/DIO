@@ -1,0 +1,36 @@
+#!/bin/ban
+echo "Criando Repositorios"
+mkdir /publico
+mkdir /adm
+mkdir /ven
+mkdir /sece
+
+echo "Criando grupos de usuarios"
+groupadd GRP_ADM
+groupadd GRP_VEN
+groupadd GRP_SEC
+
+echo "Criando Usuarios"
+useradd carlos -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_ADM
+useradd maria -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_ADM
+useradd joao -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_ADM
+
+useradd debora -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_VEN
+useradd sebastiana -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_VEN
+useradd roberto -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_VEN
+
+useradd josefina -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_VEN
+useradd amanda -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_VEN
+useradd rogerio -m -s /bin/bash -p $(opnessl passwd -crypt Senha123) -G GRP_VEN
+
+echo "Especificando permissões dos diretorios"
+chown root:GRP_ADM /adm
+chown root:GRP_VEN
+chown:GRP_SEC
+
+chmon 770 /adm
+chmod 770 /ven[
+chmod 770 /sec
+chmod 777 /publico
+
+echo "Fim"
