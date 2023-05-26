@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "ec5c6beb-d8ff-4b89-9dfb-31776ac68078",
+		"name": "Lab-Project-IaC-Serverless-Framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25181280"
+	},
+	"item": [
+		{
+			"name": "Insert Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item\": \"newItem002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://u01slxqhkb.execute-api.us-east-1.amazonaws.com/dev/item",
+					"protocol": "https",
+					"host": [
+						"u01slxqhkb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://u01slxqhkb.execute-api.us-east-1.amazonaws.com/dev/items",
+					"protocol": "https",
+					"host": [
+						"u01slxqhkb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Items by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://u01slxqhkb.execute-api.us-east-1.amazonaws.com/dev/items/4c82a8f0-9989-4d67-a246-2b50f1619bd7",
+					"protocol": "https",
+					"host": [
+						"u01slxqhkb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items",
+						"4c82a8f0-9989-4d67-a246-2b50f1619bd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"itemStatus\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://u01slxqhkb.execute-api.us-east-1.amazonaws.com/dev/items/4bcbf339-72b2-470c-a88c-17ae8cab7e84",
+					"protocol": "https",
+					"host": [
+						"u01slxqhkb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items",
+						"4bcbf339-72b2-470c-a88c-17ae8cab7e84"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
